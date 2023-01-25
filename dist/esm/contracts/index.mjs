@@ -31,7 +31,7 @@ var ContractManager = class {
     "UniversalResolver",
     getUniversalResolver
   );
-  getRegistry = this.generateContractGetter("ENSRegistry", getRegistry);
+  getRegistry = this.generateContractGetter("ONSRegistry", getRegistry);
   getReverseRegistrar = this.generateContractGetter(
     "ReverseRegistrar",
     getReverseRegistrar

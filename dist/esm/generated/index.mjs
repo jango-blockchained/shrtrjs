@@ -4,7 +4,7 @@ import { BaseRegistrarImplementation__factory } from "./factories/BaseRegistrarI
 import { DefaultReverseResolver__factory } from "./factories/DefaultReverseResolver__factory.mjs";
 import { DNSRegistrar__factory } from "./factories/DNSRegistrar__factory.mjs";
 import { DNSSECImpl__factory } from "./factories/DNSSECImpl__factory.mjs";
-import { ENSRegistry__factory } from "./factories/ENSRegistry__factory.mjs";
+import { ONSRegistry__factory } from "./factories/ONSRegistry__factory.mjs";
 import { ETHRegistrarController__factory } from "./factories/ETHRegistrarController__factory.mjs";
 import { P256SHA256Algorithm__factory } from "./factories/P256SHA256Algorithm__factory.mjs";
 import { PublicResolver__factory } from "./factories/PublicResolver__factory.mjs";
@@ -27,7 +27,7 @@ export {
   DNSRegistrar__factory,
   DNSSECImpl__factory,
   DefaultReverseResolver__factory,
-  ENSRegistry__factory,
+  ONSRegistry__factory,
   ETHRegistrarController__factory,
   Multicall__factory,
   NameWrapper__factory,

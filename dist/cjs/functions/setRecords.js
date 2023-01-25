@@ -34,7 +34,7 @@ async function setRecords_default({
 }) {
   var _a;
   if (!name.includes(".")) {
-    throw new Error("Input is not an ENS name");
+    throw new Error("Input is not an ONS name");
   }
   let resolverToUse;
   if (resolverAddress) {

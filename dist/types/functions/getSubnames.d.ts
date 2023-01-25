@@ -1,4 +1,4 @@
-import { ENSArgs } from '../index';
+import { ONSArgs } from '../index';
 type Subname = {
     id: string;
     labelName: string | null;
@@ -19,7 +19,7 @@ type Params = {
     lastSubnames?: Array<any>;
     search?: string;
 };
-declare const getSubnames: (injected: ENSArgs<'gqlInstance'>, functionArgs: Params) => Promise<{
+declare const getSubnames: (injected: ONSArgs<'gqlInstance'>, functionArgs: Params) => Promise<{
     subnames: Subname[];
     subnameCount: number;
 }>;

@@ -1,9 +1,9 @@
-import { BatchFunctionResult, ENSArgs, RawFunction } from '../index';
+import { BatchFunctionResult, ONSArgs, RawFunction } from '../index';
 declare const _default: {
-    raw: ({ multicallWrapper }: ENSArgs<"multicallWrapper">, ...items: BatchFunctionResult<RawFunction>[]) => Promise<{
+    raw: ({ multicallWrapper }: ONSArgs<"multicallWrapper">, ...items: BatchFunctionResult<RawFunction>[]) => Promise<{
         to: string;
         data: string;
     }>;
-    decode: ({ multicallWrapper }: ENSArgs<"multicallWrapper">, data: string, ...items: BatchFunctionResult<RawFunction>[]) => Promise<any[] | undefined>;
+    decode: ({ multicallWrapper }: ONSArgs<"multicallWrapper">, data: string, ...items: BatchFunctionResult<RawFunction>[]) => Promise<any[] | undefined>;
 };
 export default _default;

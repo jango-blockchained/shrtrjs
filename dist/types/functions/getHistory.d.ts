@@ -1,8 +1,8 @@
-import { ENSArgs } from '../index';
+import { ONSArgs } from '../index';
 type DomainEvent = 'NewOwner' | 'NewResolver' | 'Transfer' | 'NewTTL' | 'WrappedTransfer' | 'NameWrapped' | 'NameUnwrapped' | 'FusesSet';
 type RegistrationEvent = 'NameRegistered' | 'NameRenewed' | 'NameTransferred';
 type ResolverEvent = 'AddrChanged' | 'MulticoinAddrChanged' | 'NameChanged' | 'AbiChanged' | 'PubkeyChanged' | 'TextChanged' | 'ContenthashChanged' | 'InterfaceChanged' | 'AuthorisationChanged' | 'VersionChanged';
-export declare function getHistory({ gqlInstance }: ENSArgs<'gqlInstance'>, name: string): Promise<{
+export declare function getHistory({ gqlInstance }: ONSArgs<'gqlInstance'>, name: string): Promise<{
     domain: {
         type: DomainEvent;
         blockNumber: number;

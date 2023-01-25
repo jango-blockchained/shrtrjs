@@ -5,10 +5,13 @@ import GqlManager from "./GqlManager.mjs";
 import singleCall from "./utils/singleCall.mjs";
 import writeTx from "./utils/writeTx.mjs";
 var graphURIEndpoints = {
-  10: "https://api.thegraph.com/subgraphs/name/opnames/onsmainnet",
+  1: "https://api.thegraph.com/subgraphs/name/ensdomains/ens",
+  3: "https://api.thegraph.com/subgraphs/name/ensdomains/ensropsten",
+  4: "https://api.thegraph.com/subgraphs/name/ensdomains/ensrinkeby",
+  5: "https://api.thegraph.com/subgraphs/name/ensdomains/ensgoerli",
   420: "https://api.thegraph.com/subgraphs/name/opnames/onsgoerli"
 };
-var ENS = class {
+var ONS = class {
   options;
   provider;
   graphURI;
@@ -129,9 +132,9 @@ var ENS = class {
     );
   };
   withProvider = (provider) => {
-    const newENS = new ENS(this.options);
-    newENS.initialProvider = provider;
-    return newENS;
+    const newONS = new ONS(this.options);
+    newONS.initialProvider = provider;
+    return newONS;
   };
   batch = this.generateRawFunction(
     "initialGetters",
@@ -317,5 +320,5 @@ var ENS = class {
   renewNameWithData = this.generateWriteFunction("renewNames", ["contracts"], "renewNameWithData");
 };
 export {
-  ENS
+  ONS
 };

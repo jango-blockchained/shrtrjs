@@ -1,17 +1,32 @@
+"use strict";
 var __defProp = Object.defineProperty;
-var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var __publicField = (obj, key, value) => {
-  __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
-  return value;
+var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+var __getOwnPropNames = Object.getOwnPropertyNames;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __export = (target, all) => {
+  for (var name in all)
+    __defProp(target, name, { get: all[name], enumerable: true });
 };
-
-// src/generated/factories/ENSRegistry__factory.ts
-import { Contract, utils } from "ethers";
-var _abi = [
+var __copyProps = (to, from, except, desc) => {
+  if (from && typeof from === "object" || typeof from === "function") {
+    for (let key of __getOwnPropNames(from))
+      if (!__hasOwnProp.call(to, key) && key !== except)
+        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+  }
+  return to;
+};
+var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
+var ONSRegistry_factory_exports = {};
+__export(ONSRegistry_factory_exports, {
+  ONSRegistry__factory: () => ONSRegistry__factory
+});
+module.exports = __toCommonJS(ONSRegistry_factory_exports);
+var import_ethers = require("ethers");
+const _abi = [
   {
     inputs: [
       {
-        internalType: "contract ENS",
+        internalType: "contract ONS",
         name: "_old",
         type: "address"
       }
@@ -159,7 +174,7 @@ var _abi = [
     name: "old",
     outputs: [
       {
-        internalType: "contract ENS",
+        internalType: "contract ONS",
         name: "",
         type: "address"
       }
@@ -429,15 +444,12 @@ var _abi = [
     type: "function"
   }
 ];
-var ENSRegistry__factory = class {
+class ONSRegistry__factory {
   static createInterface() {
-    return new utils.Interface(_abi);
+    return new import_ethers.utils.Interface(_abi);
   }
   static connect(address, signerOrProvider) {
-    return new Contract(address, _abi, signerOrProvider);
+    return new import_ethers.Contract(address, _abi, signerOrProvider);
   }
-};
-__publicField(ENSRegistry__factory, "abi", _abi);
-export {
-  ENSRegistry__factory
-};
+}
+ONSRegistry__factory.abi = _abi;

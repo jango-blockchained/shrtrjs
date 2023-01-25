@@ -1,11 +1,11 @@
 import { BigNumber } from 'ethers';
-import { ENSArgs } from '../index';
+import { ONSArgs } from '../index';
 declare const _default: {
-    raw: ({ contracts }: ENSArgs<"contracts">, name: string) => Promise<{
+    raw: ({ contracts }: ONSArgs<"contracts">, name: string) => Promise<{
         to: string;
         data: string;
     }>;
-    decode: ({ contracts }: ENSArgs<"contracts">, data: string) => Promise<{
+    decode: ({ contracts }: ONSArgs<"contracts">, data: string) => Promise<{
         fuseObj: import("../utils/fuses").CurrentFuses;
         expiryDate: Date;
         rawFuses: BigNumber;

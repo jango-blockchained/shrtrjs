@@ -29,7 +29,7 @@ __export(generated_exports, {
   DNSRegistrar__factory: () => import_DNSRegistrar_factory.DNSRegistrar__factory,
   DNSSECImpl__factory: () => import_DNSSECImpl_factory.DNSSECImpl__factory,
   DefaultReverseResolver__factory: () => import_DefaultReverseResolver_factory.DefaultReverseResolver__factory,
-  ENSRegistry__factory: () => import_ENSRegistry_factory.ENSRegistry__factory,
+  ONSRegistry__factory: () => import_ONSRegistry_factory.ONSRegistry__factory,
   ETHRegistrarController__factory: () => import_ETHRegistrarController_factory.ETHRegistrarController__factory,
   Multicall__factory: () => import_Multicall_factory.Multicall__factory,
   NameWrapper__factory: () => import_NameWrapper_factory.NameWrapper__factory,
@@ -53,7 +53,7 @@ var import_BaseRegistrarImplementation_factory = require("./factories/BaseRegist
 var import_DefaultReverseResolver_factory = require("./factories/DefaultReverseResolver__factory");
 var import_DNSRegistrar_factory = require("./factories/DNSRegistrar__factory");
 var import_DNSSECImpl_factory = require("./factories/DNSSECImpl__factory");
-var import_ENSRegistry_factory = require("./factories/ENSRegistry__factory");
+var import_ONSRegistry_factory = require("./factories/ONSRegistry__factory");
 var import_ETHRegistrarController_factory = require("./factories/ETHRegistrarController__factory");
 var import_P256SHA256Algorithm_factory = require("./factories/P256SHA256Algorithm__factory");
 var import_PublicResolver_factory = require("./factories/PublicResolver__factory");

@@ -23,7 +23,7 @@ __export(factories_exports, {
   DNSRegistrar__factory: () => import_DNSRegistrar_factory.DNSRegistrar__factory,
   DNSSECImpl__factory: () => import_DNSSECImpl_factory.DNSSECImpl__factory,
   DefaultReverseResolver__factory: () => import_DefaultReverseResolver_factory.DefaultReverseResolver__factory,
-  ENSRegistry__factory: () => import_ENSRegistry_factory.ENSRegistry__factory,
+  ONSRegistry__factory: () => import_ONSRegistry_factory.ONSRegistry__factory,
   ETHRegistrarController__factory: () => import_ETHRegistrarController_factory.ETHRegistrarController__factory,
   Multicall__factory: () => import_Multicall_factory.Multicall__factory,
   NameWrapper__factory: () => import_NameWrapper_factory.NameWrapper__factory,
@@ -46,7 +46,7 @@ var import_BulkRenewal_factory = require("./BulkRenewal__factory");
 var import_DNSRegistrar_factory = require("./DNSRegistrar__factory");
 var import_DNSSECImpl_factory = require("./DNSSECImpl__factory");
 var import_DefaultReverseResolver_factory = require("./DefaultReverseResolver__factory");
-var import_ENSRegistry_factory = require("./ENSRegistry__factory");
+var import_ONSRegistry_factory = require("./ONSRegistry__factory");
 var import_ETHRegistrarController_factory = require("./ETHRegistrarController__factory");
 var import_Multicall_factory = require("./Multicall__factory");
 var import_NameWrapper_factory = require("./NameWrapper__factory");

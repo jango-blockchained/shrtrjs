@@ -1,4 +1,4 @@
-import { ENSArgs } from '../index';
+import { ONSArgs } from '../index';
 import { CurrentFuses } from '../utils/fuses';
 export type Name = {
     id: string;
@@ -46,5 +46,5 @@ type AllParams = {
     pageSize?: never;
 };
 type Params = BaseParams & (RegistrantParams | OwnerParams | WrappedOwnerParams | AllParams);
-declare const getNames: ({ gqlInstance }: ENSArgs<'gqlInstance'>, { address: _address, type, page, pageSize, orderDirection, orderBy, }: Params) => Promise<Name[]>;
+declare const getNames: ({ gqlInstance }: ONSArgs<'gqlInstance'>, { address: _address, type, page, pageSize, orderDirection, orderBy, }: Params) => Promise<Name[]>;
 export default getNames;

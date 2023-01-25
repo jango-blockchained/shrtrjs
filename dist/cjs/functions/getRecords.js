@@ -25,7 +25,7 @@ var import_validation = require("../utils/validation");
 async function getRecords_default({ getProfile }, name, options) {
   const inputType = (0, import_validation.parseInputType)(name);
   if (inputType.type !== "name" && inputType.type !== "label") {
-    throw new Error("Input must be an ENS name");
+    throw new Error("Input must be an ONS name");
   }
   return getProfile(name, options);
 }

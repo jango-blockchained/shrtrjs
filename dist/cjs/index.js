@@ -24,7 +24,7 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 var src_exports = {};
 __export(src_exports, {
-  ENS: () => ENS
+  ONS: () => ONS
 });
 module.exports = __toCommonJS(src_exports);
 var import_getContractAddress = require("./contracts/getContractAddress");
@@ -33,10 +33,13 @@ var import_GqlManager = __toESM(require("./GqlManager"));
 var import_singleCall = __toESM(require("./utils/singleCall"));
 var import_writeTx = __toESM(require("./utils/writeTx"));
 const graphURIEndpoints = {
-  10: "https://api.thegraph.com/subgraphs/name/opnames/onsmainnet",
+  1: "https://api.thegraph.com/subgraphs/name/ensdomains/ens",
+  3: "https://api.thegraph.com/subgraphs/name/ensdomains/ensropsten",
+  4: "https://api.thegraph.com/subgraphs/name/ensdomains/ensrinkeby",
+  5: "https://api.thegraph.com/subgraphs/name/ensdomains/ensgoerli",
   420: "https://api.thegraph.com/subgraphs/name/opnames/onsgoerli"
 };
-class ENS {
+class ONS {
   constructor(options) {
     this.getContractAddress = import_getContractAddress.getContractAddress;
     this.gqlInstance = new import_GqlManager.default();
@@ -150,9 +153,9 @@ class ENS {
       );
     };
     this.withProvider = (provider) => {
-      const newENS = new ENS(this.options);
-      newENS.initialProvider = provider;
-      return newENS;
+      const newONS = new ONS(this.options);
+      newONS.initialProvider = provider;
+      return newONS;
     };
     this.batch = this.generateRawFunction(
       "initialGetters",

@@ -1,7 +1,7 @@
 import { Signer } from "ethers";
 import type { Provider } from "@ethersproject/providers";
-import type { ENSRegistry, ENSRegistryInterface } from "../ENSRegistry";
-export declare class ENSRegistry__factory {
+import type { ONSRegistry, ONSRegistryInterface } from "../ONSRegistry";
+export declare class ONSRegistry__factory {
     static readonly abi: ({
         inputs: {
             internalType: string;
@@ -47,6 +47,6 @@ export declare class ENSRegistry__factory {
         type: string;
         anonymous?: undefined;
     })[];
-    static createInterface(): ENSRegistryInterface;
-    static connect(address: string, signerOrProvider: Signer | Provider): ENSRegistry;
+    static createInterface(): ONSRegistryInterface;
+    static connect(address: string, signerOrProvider: Signer | Provider): ONSRegistry;
 }

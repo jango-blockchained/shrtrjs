@@ -11,8 +11,8 @@ var _abi = [
   {
     inputs: [
       {
-        internalType: "contract ENS",
-        name: "ensAddr",
+        internalType: "contract ONS",
+        name: "onsAddr",
         type: "address"
       }
     ],
@@ -23,10 +23,10 @@ var _abi = [
   {
     constant: true,
     inputs: [],
-    name: "ens",
+    name: "ons",
     outputs: [
       {
-        internalType: "contract ENS",
+        internalType: "contract ONS",
         name: "",
         type: "address"
       }

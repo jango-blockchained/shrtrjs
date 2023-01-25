@@ -21,5 +21,5 @@ __export(registry_exports, {
   default: () => registry_default
 });
 module.exports = __toCommonJS(registry_exports);
-var import_ENSRegistry_factory = require("../generated/factories/ENSRegistry__factory");
-var registry_default = (provider, address) => import_ENSRegistry_factory.ENSRegistry__factory.connect(address, provider);
+var import_ONSRegistry_factory = require("../generated/factories/ONSRegistry__factory");
+var registry_default = (provider, address) => import_ONSRegistry_factory.ONSRegistry__factory.connect(address, provider);

@@ -50,7 +50,7 @@ var dnsQuery = async (qtype, qname) => {
   return response;
 };
 async function getDNSOwner_default(_, dnsName) {
-  const result = await dnsQuery("TXT", `_ens.${dnsName}`);
+  const result = await dnsQuery("TXT", `_ons.${dnsName}`);
   const address = result?.answers?.[0]?.data?.[0]?.toString()?.split("=")?.[1];
   return address || EMPTY_ADDRESS;
 }

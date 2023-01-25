@@ -1,9 +1,9 @@
-import { ENSArgs } from '../index';
+import { ONSArgs } from '../index';
 import { CommitmentParams } from '../utils/registerHelpers';
 type Params = Omit<CommitmentParams, 'resolver' | 'name'> & {
     resolverAddress?: string;
 };
-export default function ({ contracts }: ENSArgs<'contracts'>, name: string, { resolverAddress, ...params }: Params): Promise<{
+export default function ({ contracts }: ONSArgs<'contracts'>, name: string, { resolverAddress, ...params }: Params): Promise<{
     customData: {
         secret: string;
         commitment: string;

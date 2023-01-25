@@ -54,7 +54,7 @@ class ContractManager {
       "UniversalResolver",
       import_universalResolver.default
     );
-    this.getRegistry = this.generateContractGetter("ENSRegistry", import_registry.default);
+    this.getRegistry = this.generateContractGetter("ONSRegistry", import_registry.default);
     this.getReverseRegistrar = this.generateContractGetter(
       "ReverseRegistrar",
       import_reverseRegistrar.default

@@ -1,5 +1,5 @@
 import { ethers } from 'ethers';
-declare const _default: (provider: ethers.providers.Provider, ensData: any, func: {
+declare const _default: (provider: ethers.providers.Provider, onsData: any, func: {
     raw: (...args: any[]) => Promise<{
         to: string;
         data: string;

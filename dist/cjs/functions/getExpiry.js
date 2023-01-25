@@ -61,10 +61,10 @@ const getContractToUse = (contract, labels) => {
   }
   return "nameWrapper";
 };
-const raw = async (ensArgs, name, { contract } = {}) => {
+const raw = async (onsArgs, name, { contract } = {}) => {
   const labels = name.split(".");
   const contractToUse = getContractToUse(contract, labels);
-  return contractToUse === "nameWrapper" ? getWrapperExpiry(ensArgs, labels) : getRegistrarExpiry(ensArgs, labels);
+  return contractToUse === "nameWrapper" ? getWrapperExpiry(onsArgs, labels) : getRegistrarExpiry(onsArgs, labels);
 };
 const decodeRegistrarExpiry = async ({ contracts, multicallWrapper }, data) => {
   const result = await multicallWrapper.decode(data);
@@ -107,7 +107,7 @@ const decodeWrapperExpiry = async ({ contracts }, data) => {
     };
   }
 };
-const decode = async (ensArgs, data, name, { contract } = {}) => {
+const decode = async (onsArgs, data, name, { contract } = {}) => {
   if (data === null) {
     return {
       expiry: null,
@@ -116,7 +116,7 @@ const decode = async (ensArgs, data, name, { contract } = {}) => {
   }
   const labels = name.split(".");
   const contractToUse = getContractToUse(contract, labels);
-  return contractToUse === "nameWrapper" ? decodeWrapperExpiry(ensArgs, data) : decodeRegistrarExpiry(ensArgs, data);
+  return contractToUse === "nameWrapper" ? decodeWrapperExpiry(onsArgs, data) : decodeRegistrarExpiry(onsArgs, data);
 };
 var getExpiry_default = {
   raw,

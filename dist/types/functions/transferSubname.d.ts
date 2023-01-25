@@ -1,5 +1,5 @@
 import { ethers } from 'ethers';
-import { ENSArgs } from '../index';
+import { ONSArgs } from '../index';
 import { Expiry } from '../utils/wrapper';
 type BaseArgs = {
     owner: string;
@@ -11,5 +11,5 @@ type NameWrapperArgs = {
     expiry?: Expiry;
 } & BaseArgs;
 type Args = BaseArgs | NameWrapperArgs;
-export default function ({ contracts, signer, getExpiry, }: ENSArgs<'contracts' | 'signer' | 'getExpiry'>, name: string, { contract, owner, resolverAddress, ...wrapperArgs }: Args): Promise<ethers.PopulatedTransaction>;
+export default function ({ contracts, signer, getExpiry, }: ONSArgs<'contracts' | 'signer' | 'getExpiry'>, name: string, { contract, owner, resolverAddress, ...wrapperArgs }: Args): Promise<ethers.PopulatedTransaction>;
 export {};

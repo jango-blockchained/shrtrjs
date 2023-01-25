@@ -3,7 +3,7 @@ export { BulkRenewal__factory } from "./BulkRenewal__factory";
 export { DNSRegistrar__factory } from "./DNSRegistrar__factory";
 export { DNSSECImpl__factory } from "./DNSSECImpl__factory";
 export { DefaultReverseResolver__factory } from "./DefaultReverseResolver__factory";
-export { ENSRegistry__factory } from "./ENSRegistry__factory";
+export { ONSRegistry__factory } from "./ONSRegistry__factory";
 export { ETHRegistrarController__factory } from "./ETHRegistrarController__factory";
 export { Multicall__factory } from "./Multicall__factory";
 export { NameWrapper__factory } from "./NameWrapper__factory";

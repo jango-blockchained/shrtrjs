@@ -147,7 +147,7 @@ var _abi = [
     name: "registry",
     outputs: [
       {
-        internalType: "contract ENS",
+        internalType: "contract ONS",
         name: "",
         type: "address"
       }

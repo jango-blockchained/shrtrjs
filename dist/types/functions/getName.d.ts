@@ -1,10 +1,10 @@
-import { ENSArgs } from '../index';
+import { ONSArgs } from '../index';
 declare const _default: {
-    raw: ({ contracts }: ENSArgs<"contracts">, address: string) => Promise<{
+    raw: ({ contracts }: ONSArgs<"contracts">, address: string) => Promise<{
         to: string;
         data: string;
     }>;
-    decode: ({ contracts }: ENSArgs<"contracts">, data: string, address: string) => Promise<{
+    decode: ({ contracts }: ONSArgs<"contracts">, data: string, address: string) => Promise<{
         name: undefined;
         match?: undefined;
         reverseResolverAddress?: undefined;

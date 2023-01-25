@@ -2,7 +2,7 @@ import type { BaseContract, BigNumber, BigNumberish, BytesLike, CallOverrides, C
 import type { FunctionFragment, Result, EventFragment } from "@ethersproject/abi";
 import type { Listener, Provider } from "@ethersproject/providers";
 import type { TypedEventFilter, TypedEvent, TypedListener, OnEvent, PromiseOrValue } from "./common";
-export interface ENSRegistryInterface extends utils.Interface {
+export interface ONSRegistryInterface extends utils.Interface {
     functions: {
         "isApprovedForAll(address,address)": FunctionFragment;
         "old()": FunctionFragment;
@@ -116,11 +116,11 @@ export interface TransferEventObject {
 }
 export type TransferEvent = TypedEvent<[string, string], TransferEventObject>;
 export type TransferEventFilter = TypedEventFilter<TransferEvent>;
-export interface ENSRegistry extends BaseContract {
+export interface ONSRegistry extends BaseContract {
     connect(signerOrProvider: Signer | Provider | string): this;
     attach(addressOrName: string): this;
     deployed(): Promise<this>;
-    interface: ENSRegistryInterface;
+    interface: ONSRegistryInterface;
     queryFilter<TEvent extends TypedEvent>(event: TypedEventFilter<TEvent>, fromBlockOrBlockhash?: string | number | undefined, toBlock?: string | number | undefined): Promise<Array<TEvent>>;
     listeners<TEvent extends TypedEvent>(eventFilter?: TypedEventFilter<TEvent>): Array<TypedListener<TEvent>>;
     listeners(eventName?: string): Array<Listener>;

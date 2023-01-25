@@ -1,9 +1,9 @@
-import { ENSArgs } from '..';
+import { ONSArgs } from '..';
 declare const _default: {
-    raw: ({ contracts }: ENSArgs<"contracts">, name: string) => Promise<{
+    raw: ({ contracts }: ONSArgs<"contracts">, name: string) => Promise<{
         to: string;
         data: string;
     }>;
-    decode: ({ contracts }: ENSArgs<"contracts">, data: string) => Promise<boolean | undefined>;
+    decode: ({ contracts }: ONSArgs<"contracts">, data: string) => Promise<boolean | undefined>;
 };
 export default _default;

@@ -12,5 +12,5 @@ var __copyProps = (to, from, except, desc) => {
   return to;
 };
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
-var ENSRegistry_exports = {};
-module.exports = __toCommonJS(ENSRegistry_exports);
+var ONSRegistry_exports = {};
+module.exports = __toCommonJS(ONSRegistry_exports);

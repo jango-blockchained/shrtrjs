@@ -1,4 +1,4 @@
-import { ENSArgs } from '../index';
+import { ONSArgs } from '../index';
 import { RecordInput } from '../utils/recordHelpers';
 type BaseInput = {
     resolverAddress?: string;
@@ -11,7 +11,7 @@ type AddrOrTextInput = {
     record: RecordInput<'addr' | 'text'>;
     type: 'addr' | 'text';
 };
-export default function ({ contracts, provider, getResolver, signer, }: ENSArgs<'contracts' | 'provider' | 'getResolver' | 'signer'>, name: string, { record, type, resolverAddress, }: BaseInput & (ContentHashInput | AddrOrTextInput)): Promise<{
+export default function ({ contracts, provider, getResolver, signer, }: ONSArgs<'contracts' | 'provider' | 'getResolver' | 'signer'>, name: string, { record, type, resolverAddress, }: BaseInput & (ContentHashInput | AddrOrTextInput)): Promise<{
     to: string;
     data: string;
 }>;

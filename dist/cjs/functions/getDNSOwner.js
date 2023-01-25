@@ -83,7 +83,7 @@ const dnsQuery = async (qtype, qname) => {
 };
 async function getDNSOwner_default(_, dnsName) {
   var _a, _b, _c, _d, _e, _f;
-  const result = await dnsQuery("TXT", `_ens.${dnsName}`);
+  const result = await dnsQuery("TXT", `_ons.${dnsName}`);
   const address = (_f = (_e = (_d = (_c = (_b = (_a = result == null ? void 0 : result.answers) == null ? void 0 : _a[0]) == null ? void 0 : _b.data) == null ? void 0 : _c[0]) == null ? void 0 : _d.toString()) == null ? void 0 : _e.split("=")) == null ? void 0 : _f[1];
   return address || import_consts.EMPTY_ADDRESS;
 }

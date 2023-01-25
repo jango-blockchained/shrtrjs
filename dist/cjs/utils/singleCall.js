@@ -21,4 +21,4 @@ __export(singleCall_exports, {
   default: () => singleCall_default
 });
 module.exports = __toCommonJS(singleCall_exports);
-var singleCall_default = async (provider, ensData, func, ...data) => func.raw(ensData, ...data).then((rawData) => provider.call({ ...rawData, ccipReadEnabled: true })).catch(() => null).then((ret) => func.decode(ensData, ret, ...data));
+var singleCall_default = async (provider, onsData, func, ...data) => func.raw(onsData, ...data).then((rawData) => provider.call({ ...rawData, ccipReadEnabled: true })).catch(() => null).then((ret) => func.decode(onsData, ret, ...data));

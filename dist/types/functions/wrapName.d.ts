@@ -1,8 +1,8 @@
 import { ethers } from 'ethers';
-import { ENSArgs } from '../index';
+import { ONSArgs } from '../index';
 import { FuseOptions } from '../utils/fuses';
 import { Expiry } from '../utils/wrapper';
-export default function ({ contracts, signer, getExpiry, }: ENSArgs<'contracts' | 'signer' | 'getExpiry'>, name: string, { wrappedOwner, fuseOptions, expiry, resolverAddress, }: {
+export default function ({ contracts, signer, getExpiry, }: ONSArgs<'contracts' | 'signer' | 'getExpiry'>, name: string, { wrappedOwner, fuseOptions, expiry, resolverAddress, }: {
     wrappedOwner: string;
     fuseOptions?: FuseOptions | string | number;
     expiry?: Expiry;

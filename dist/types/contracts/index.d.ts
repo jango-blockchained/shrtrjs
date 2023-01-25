@@ -7,7 +7,7 @@ export default class ContractManager {
     private generateContractGetter;
     getPublicResolver: (passedProvider?: any, address?: string) => Promise<import("../generated/PublicResolver").PublicResolver>;
     getUniversalResolver: (passedProvider?: any, address?: string) => Promise<import("../generated/UniversalResolver").UniversalResolver>;
-    getRegistry: (passedProvider?: any, address?: string) => Promise<import("../generated/ENSRegistry").ENSRegistry>;
+    getRegistry: (passedProvider?: any, address?: string) => Promise<import("../generated/ONSRegistry").ONSRegistry>;
     getReverseRegistrar: (passedProvider?: any, address?: string) => Promise<import("../generated/ReverseRegistrar").ReverseRegistrar>;
     getNameWrapper: (passedProvider?: any, address?: string) => Promise<import("../generated/NameWrapper").NameWrapper>;
     getDNSRegistrar: (passedProvider?: any, address?: string) => Promise<import("../generated/DNSRegistrar").DNSRegistrar>;

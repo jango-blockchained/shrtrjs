@@ -1,2 +1,2 @@
-import { ENSArgs } from '..';
-export default function ({ getOwner, provider }: ENSArgs<'getOwner' | 'provider'>, name: string): Promise<boolean>;
+import { ONSArgs } from '..';
+export default function ({ getOwner, provider }: ONSArgs<'getOwner' | 'provider'>, name: string): Promise<boolean>;

@@ -3,7 +3,7 @@ export type { BulkRenewal } from "./BulkRenewal";
 export type { DNSRegistrar } from "./DNSRegistrar";
 export type { DNSSECImpl } from "./DNSSECImpl";
 export type { DefaultReverseResolver } from "./DefaultReverseResolver";
-export type { ENSRegistry } from "./ENSRegistry";
+export type { ONSRegistry } from "./ONSRegistry";
 export type { ETHRegistrarController } from "./ETHRegistrarController";
 export type { Multicall } from "./Multicall";
 export type { NameWrapper } from "./NameWrapper";
@@ -24,7 +24,7 @@ export { BaseRegistrarImplementation__factory } from "./factories/BaseRegistrarI
 export { DefaultReverseResolver__factory } from "./factories/DefaultReverseResolver__factory";
 export { DNSRegistrar__factory } from "./factories/DNSRegistrar__factory";
 export { DNSSECImpl__factory } from "./factories/DNSSECImpl__factory";
-export { ENSRegistry__factory } from "./factories/ENSRegistry__factory";
+export { ONSRegistry__factory } from "./factories/ONSRegistry__factory";
 export { ETHRegistrarController__factory } from "./factories/ETHRegistrarController__factory";
 export { P256SHA256Algorithm__factory } from "./factories/P256SHA256Algorithm__factory";
 export { PublicResolver__factory } from "./factories/PublicResolver__factory";

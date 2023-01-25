@@ -1,4 +1,4 @@
-import { ENSArgs } from '../index';
+import { ONSArgs } from '../index';
 import { DecodedContentHash } from '../utils/contentHash';
 type FallbackRecords = {
     contentHash?: boolean;
@@ -36,5 +36,5 @@ type InputProfileOptions = ProfileOptions & {
     resolverAddress?: string;
     fallback?: FallbackRecords;
 };
-export default function ({ contracts, gqlInstance, getName, _getAddr, _getContentHash, _getText, resolverMulticallWrapper, multicallWrapper, }: ENSArgs<'contracts' | 'gqlInstance' | 'getName' | '_getText' | '_getAddr' | '_getContentHash' | 'resolverMulticallWrapper' | 'multicallWrapper'>, nameOrAddress: string, options?: InputProfileOptions): Promise<ResolvedProfile | undefined>;
+export default function ({ contracts, gqlInstance, getName, _getAddr, _getContentHash, _getText, resolverMulticallWrapper, multicallWrapper, }: ONSArgs<'contracts' | 'gqlInstance' | 'getName' | '_getText' | '_getAddr' | '_getContentHash' | 'resolverMulticallWrapper' | 'multicallWrapper'>, nameOrAddress: string, options?: InputProfileOptions): Promise<ResolvedProfile | undefined>;
 export {};

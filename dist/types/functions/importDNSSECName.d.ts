@@ -1,7 +1,7 @@
-import type { ENSArgs } from '../index';
+import type { ONSArgs } from '../index';
 export declare const DNS_OVER_HTTP_ENDPOINT = "https://1.1.1.1/dns-query";
 export type ImportDNSSECNameProps = {
     address: string;
     proverResult: any;
 };
-export default function ({ contracts, provider }: ENSArgs<'contracts' | 'signer' | 'provider'>, name: string, { address, proverResult }: ImportDNSSECNameProps): Promise<import("ethers").PopulatedTransaction | undefined>;
+export default function ({ contracts, provider }: ONSArgs<'contracts' | 'signer' | 'provider'>, name: string, { address, proverResult }: ImportDNSSECNameProps): Promise<import("ethers").PopulatedTransaction | undefined>;
