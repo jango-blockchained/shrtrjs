@@ -28,14 +28,14 @@ function isEncodedLabelhash(hash) {
   return hash.startsWith("[") && hash.endsWith("]") && hash.length === 66;
 }
 function getLabels() {
-  return hasLocalStorage ? JSON.parse(localStorage.getItem("ensjs:labels")) || {} : {};
+  return hasLocalStorage ? JSON.parse(localStorage.getItem("onsjs:labels")) || {} : {};
 }
 function _saveLabel(hash, label) {
   if (!hasLocalStorage)
     return hash;
   const labels = getLabels();
   localStorage.setItem(
-    "ensjs:labels",
+    "onsjs:labels",
     JSON.stringify({
       ...labels,
       [hash]: label

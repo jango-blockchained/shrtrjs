@@ -1,6 +1,6 @@
 {
   "name": "@opdomains/onsjs",
-  "version": "3.0.0-alpha.373",
+  "version": "3.0.0-alpha.375",
   "description": "ONS javascript library for contract interaction",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.mjs",
