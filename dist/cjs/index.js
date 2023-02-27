@@ -36,8 +36,8 @@ const graphURIEndpoints = {
   1: "https://api.thegraph.com/subgraphs/name/ensdomains/ens",
   3: "https://api.thegraph.com/subgraphs/name/ensdomains/ensropsten",
   4: "https://api.thegraph.com/subgraphs/name/ensdomains/ensrinkeby",
-  5: "https://api.thegraph.com/subgraphs/name/stepnalien/minegoerli",
-  420: "https://api.thegraph.com/subgraphs/name/opnames/onsgoerli"
+  5: "https://api.thegraph.com/subgraphs/name/grmkris/op-ens",
+  420: "https://api.thegraph.com/subgraphs/name/opnames/opgoerli"
 };
 class ONS {
   constructor(options) {
